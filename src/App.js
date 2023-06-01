@@ -17,7 +17,7 @@ function App() {
         <>
             <Header/>
         </>
-      {member != null ? <JRoutes/> : <Login member={member}/>}
+      {member.login? <JRoutes/> : <Login member={member}/>}
     </div>
   );
 }
